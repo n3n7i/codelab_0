@@ -30,6 +30,7 @@ function copy!(x::VecList, y::Array{T,1}) where T
   if(x.clen<n)
     resize!(x.point, n);
     resize!(x.dex, n);
+    resize!(x.prex, n);
     x.clen = n;
     end;
 
